@@ -1,0 +1,158 @@
+/* 네비 */
+.nav{
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    box-shadow: 0 0 10px #ddd;
+    background: #fff;
+    z-index: 2;
+}
+.nav>ul{
+    padding-left: 31.5%;
+}
+.nav>ul>li{
+    float: left;
+}
+.nav>ul>.nav1{
+    padding: 17px 25px 0 25px;
+}
+.nav>ul>li>a{
+    font-size: 20px;
+}
+.nav>ul>li>a>img{
+    width: 200px;
+    padding: 16px 25px 0 25px;
+}
+
+
+/* 컨텐츠1 */
+.cont1{
+    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.cont1 h2{
+    font-size: 50px;
+    margin-bottom: -20px;
+    font-family: 'GimpoGothicBold00';
+}
+.cont1 h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-family: 'GimpoGothicBold00';
+}
+.cont1 p{
+    margin: 0 auto;
+    width: 800px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* 컨텐츠2 */
+.cont2{
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.cont2 img{
+    width: 120%;
+}
+.cont2 .cont2_text p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.cont2 .cont2_text p a{
+    color: #fff;
+    padding: 20px 50px;
+    border: 2px solid #fff;
+}
+.cont2 .cont2_text p:hover{
+    font-size: 30px;
+}
+
+
+/* 팝업 */
+.popup_btn a {
+    display: inline-block;
+    padding: 20px;
+    background: #555;
+    color: #fff;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 900;
+  }
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    position: fixed;
+    width: 60%;
+    padding: 10px;
+    max-width: 1000px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .9);
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity .5s, visibility 0s linear .5s;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+  }
+  
+  .popup:target {
+    visibility: visible;
+    opacity: 1;
+    /* cancel visibility transition delay */
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  
+  .popup-close {
+    position: absolute;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .9);
+  }
+  
+  .popup .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    color: #000;
+    transition: color .3s;
+    font-size: 2em;
+    line-height: .6em;
+    font-weight: bold;
+  }
+  
+  .popup .close:hover {
+    color: #ccc;
+  }
+
+  .popup img{
+      width: 49%;
+  }

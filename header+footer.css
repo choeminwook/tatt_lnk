@@ -1,0 +1,49 @@
+#wrap{
+    margin: 0 auto;
+}
+@font-face {
+    font-family: 'GimpoGothicBold00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+/* 네비 */
+.nav{
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    box-shadow: 0 0 10px #ddd;
+    background: #fff;
+    z-index: 2;
+}
+.nav>ul{
+    padding-left: 31.5%;
+}
+.nav>ul>li{
+    float: left;
+}
+.nav>ul>.nav1{
+    padding: 17px 25px 0 25px;
+}
+.nav>ul>li>a{
+    font-size: 20px;
+}
+.nav>ul>li>a>img{
+    width: 200px;
+    padding: 16px 25px 0 25px;
+}
+/* 푸터 */
+.footer{
+    padding: 40px 0;
+    text-align: center;
+}
+.footer .logo img{
+    width: 150px;
+    margin: 0 auto;
+}

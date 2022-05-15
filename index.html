@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="slick.min.js"></script>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="slick.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="font.css" type="text/css">
+    <link rel="stylesheet" href="header+footer.css" type="text/css">
+    <title>tatt lnk</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="nav">
+                <ul>
+                    <li class="nav1"><a href="#about">ABOUT</a></li>
+                    <li class="nav1"><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#"><img src="img/logo.png" alt=""></a></li>
+                    <li class="nav1"><a href="#">CONTACT</a></li>
+                    <li class="nav1"><a href="#">QNA</a></li>
+                </ul>
+            </div>
+            <div class="slider">
+                <div><img src="img/slider1.png" alt=""></div>
+                <div><img src="img/slider2.png" alt=""></div>
+            </div>
+        </div>
+        <div id="contents">
+            <div class="container">
+                <div class="cont1" id="about">
+                    <h2>ABOUT</h2>
+                    <h3>"TATT INK"</h3>
+                    <p>
+                        예시를 위한 텍스트입니다. 본 포트폴리오와 연관이 없습니다.<br>
+                        - 타투쉐어를 비롯한 패션/뷰티 분야 모바일 서비스(웹/앱) 개발운영
+- 유튜브, 인스타그램, 페이스북 기반 SNS 콘텐츠 제작 및 채널 운영
+- 자체 채널을 활용한 전자상거래업 및 광고업
+
+Q. 타마노아는 어떤 회사인가요?
+A. 타마노아는 벤처계의 영원한 락밴드를 꿈꿉니다. 락밴드가 음악으로 사람들의 마음을 움직이듯 우리는 타마노아의 서비스를 통해 사람들의 가슴을 뛰게하고 그들의 삶 깊숙히 녹아들려 합니다. 또한 락밴드가 음반 하나로 해체하지 않듯 우리는 서비스의 성공여부를 떠나 팀을 더 중요하게 생각합니다.
+
+Q. 타마노아는 무엇을 가장 중요하게 생각하나요?
+A. 타마노아의 변치 않는 2가지 원칙은 "1,000명이 좋아하는 서비스가 아닌 100명이 사랑하는 서비스를 만든다.", " 아이템보다 팀이 먼저다. " 입니다. 타마노아에 합류하여 사람들의 가슴을 뛰게 하는 서비스를 함께 만들거나 우리가 만든 서비스를 사랑해주는 100명이 되어주세요.
+<br><br>
+Q. 타마노아는 어떤 일을 하나요?
+A. ‘타투쉐어’(타투 O2O앱), ‘피킷’(소비자 참여형 패션 쇼핑 플랫폼) 등 타마노아 맴버들의 철학과 색깔이 담긴 Product과 Service를 개발·운영합니다. 지금은 타투쉐어를 통해 “타투가 건전하고 쿨한 우리들의 새로운 문화다!”라는 메시지를 세상에 전하고 있습니다.
+
+Q. 타투쉐어는 어떤 앱인가요?
+A. 타투쉐어(Tattoo Share)는 “어떤 타투를, 어떤 타투이스트에게 받아야 하지?”라는 타투피플들의 고민을 해결해주는 대한민국 1등 타투 예약앱입니다. 타투검색부터 견적비교, 상담예약까지. 타투 받을땐 타투쉐어 하나면 끝!
+
+Q. 타투쉐어는 얼마나 성장했나요?
+A. 타투를 받는 2명 중 1명은 타투쉐어를 통해 타투에 대한 정보를 습득하고 있습니다. 500,000명이상의 타투피플, 1,000명이상의 타투이스트들이 타투쉐어와 함께 성장해나가고 있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="cont2" id="gallery">
+                <img src="img/cont2.png" alt="">
+                <div class="cont2_text">
+                    <p><a href="#pop01">GALLERY</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <p>
+                        COPYRIGHT 2022 all right reseved.
+                        <br>
+                        경기도 부천시 원미구 187-2 삼성빌딩 XX층 (주)탓잉크
+                        <br>
+                        본 사이트는 포트폴리오 목적으로 제작되었습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pop01" class="overlay">
+        <div class="popup">
+            <a href="#none" class="close">X</a>
+            <img src="img/pop1.png" alt="">
+            <img src="img/pop2.png" alt="">
+        </div>
+    </div>
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            autoplay: true,
+            fade: true,
+            arrows: false
+        });
+                            
+    </script>
+</body>
+</html>
